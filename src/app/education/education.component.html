@@ -1,26 +1,22 @@
-<br>
+<br />
 
-
-<table class="table">
-
-	<tbody *ngFor="let education of educations">
-		<tr>
-			<th class="period">{{education.periode}}</th>
-			<th class="course">{{education.richting}}</th>
-
-
-		</tr>
-		<tr>
-			<td></td>
-			<td class="school">{{education.instelling}}</td>
-
-		</tr>
-		<tr>
-			<td></td>
-			<td class="opmerking">{{education.opmerking}}</td>
-		</tr>
-	</tbody>
-</table>
-
-
-<br>
+<div id="education">
+  <h2>Education background</h2>
+  <table class="table">
+    <tbody *ngFor="let education of educations">
+      <tr>
+        <th class="period">{{education.periode}}</th>
+        <th class="course">{{education.richting}}</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="school">{{education.instelling}}</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="opmerking">{{education.opmerking}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br />
