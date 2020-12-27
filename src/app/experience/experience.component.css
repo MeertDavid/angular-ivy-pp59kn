@@ -2,8 +2,8 @@
 .table > tbody > tr > th {
   border-top: none;
   border-bottom-width: 50px;
+  padding-left: 50px;
 }
-
 .course {
   text-align: left;
   font-style: oblique;

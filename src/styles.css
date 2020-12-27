@@ -1,1 +1,9 @@
 /* Add application styles & imports to this file! */
+h2 {
+  color: black;
+  padding-left: 10px;
+}
+
+p {
+  padding-left: 20px;
+}

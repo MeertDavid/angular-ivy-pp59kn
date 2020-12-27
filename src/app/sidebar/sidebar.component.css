@@ -2,76 +2,25 @@
     SIDEBAR STYLE
 ----------------------------------------------------- */
 
-.wrapper {
-  display: flex;
-  width: 100%;
+#profile {
+  padding-top: 50px;
+}
+#name {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: larger;
+  text-align: center;
+  padding-top: 10px;
+  color: black;
 }
 
-#sidebar {
-  width: 250px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  z-index: 999;
-  //background: #d6d6d6;
-  background-image: url("https://c.pxhere.com/images/44/6c/3a49baf42fa9320d25e8ff9ca339-1568873.jpg!d");
-  color: #fff;
-  transition: all 0.3s;
-}
-
-#sidebar.active {
-  margin-left: -250px;
-}
-
-#sidebar .sidebar-header {
-  padding: 20px;
-  //background: #b3cbe4;
-}
-
-#sidebar ul.components {
-  padding: 20px 0;
-  // border-bottom: 1px solid #47748b;
-}
-
-#sidebar ul p {
-  color: #fff;
-  padding: 10px;
-}
-
-#sidebar ul li a {
-  padding: 10px;
-  font-size: 1.1em;
+#sidebar_list ul li {
   display: block;
-}
-
-#sidebar ul li a:hover {
-  color: #7386d5;
-  background: rgb(173, 236, 245);
-}
-
-#sidebar ul li.active > a,
-a[aria-expanded="true"] {
-  color: #fff;
-  // background: #6d7fcc;
-}
-
-a[data-toggle="collapse"] {
-  position: relative;
-}
-
-.dropdown-toggle::after {
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-}
-
-ul ul a {
-  font-size: 0.9em !important;
-  padding-left: 30px !important;
-  // background: #6d7fcc;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: medium;
+  text-align: center;
+  padding-top: 10px;
 }
 
 .profile_pic {
@@ -79,8 +28,60 @@ ul ul a {
   border-radius: 50%;
   z-index: -1;
   transition: 0.3s ease-in;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .mousepointer:hover {
   cursor: pointer;
+  color: white;
+}
+
+.social-buttons a {
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 8px;
+  padding-left: 50px;
+}
+
+.social-buttons ul li {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.social-buttons a::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, #22a6b3, #30336b);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover::before {
+  transform: scale(0);
+}
+
+.social-buttons a i {
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover i {
+  background: linear-gradient(45deg, #22a6b3, #30336b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
 }

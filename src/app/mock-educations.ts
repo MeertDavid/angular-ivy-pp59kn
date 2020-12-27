@@ -20,19 +20,19 @@ export const EDUCATIONS: Education[] = [
     opmerking: "- voltooid -"
   },
   {
-    periode: "2007-2009",
+    periode: "2007-2008",
     richting: "Graduaat Boekhouden",
     instelling: "Technisch Instituut Sint-Maarten, 9300 Aalst",
     opmerking: "1ste jaar voltooid - stopzetting werkgerelateerd "
   },
   {
-    periode: "2004-2005",
+    periode: "2006-2007",
     richting: "Accountancy-Fiscaliteit",
     instelling: "Hogeschool Gent Campus bedrijfskunde, 9300 Aalst",
     opmerking: "1ste jaar voltooid - stopzetting werkgerelateerd "
   },
   {
-    periode: "2002-2004",
+    periode: "2004-2006",
     richting: "Boekhouden-Informatica",
     instelling: "Technisch Instituut Sint_maarten, 9300 Aalst",
     opmerking: "- voltooid -"
