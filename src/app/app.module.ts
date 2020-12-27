@@ -14,6 +14,7 @@ import { ContentComponent } from "./content/content.component";
 import { AboutmeComponent } from "./aboutme/aboutme.component";
 import { ExperienceComponent } from "./experience/experience.component";
 import { NavbarTopComponent } from "./navbar-top/navbar-top.component";
+import { SinglePageResumeComponent } from "./single-page-resume/single-page-resume.component";
 //import { Routes, RouterModule, ExtraOptions } from "@angular/router";
 
 @NgModule({
@@ -21,6 +22,7 @@ import { NavbarTopComponent } from "./navbar-top/navbar-top.component";
     BrowserModule,
     RouterModule.forRoot([
       { path: "curriculum", component: CurriculumComponent },
+      { path: "single-page-resume", component: SinglePageResumeComponent },
       { path: "", redirectTo: "/curriculum", pathMatch: "full" },
       { path: "**", component: PageNotFoundComponent }
     ]),
@@ -38,8 +40,10 @@ import { NavbarTopComponent } from "./navbar-top/navbar-top.component";
     ContentComponent,
     AboutmeComponent,
     ExperienceComponent,
-    NavbarTopComponent
+    NavbarTopComponent,
+    SinglePageResumeComponent
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [RouterModule]
 })
 export class AppModule {}
